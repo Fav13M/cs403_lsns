@@ -20,10 +20,10 @@ object Main {
 //********
 class Model {
   val playerOrder = new PlayerOrder
-  playerOrder.enqueue("A")
-  playerOrder.enqueue("B")
-  playerOrder.enqueue("C")
-  playerOrder.enqueue("D")
+  playerOrder.enqueue("AB")
+  playerOrder.enqueue("BC")
+  playerOrder.enqueue("CD")
+  playerOrder.enqueue("DE")
 
   def showPlayerOrder: String = { playerOrder.show }  
   def advancePlayerOrder: String = { playerOrder.advance }
