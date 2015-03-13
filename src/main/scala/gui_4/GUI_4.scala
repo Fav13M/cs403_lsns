@@ -8,11 +8,11 @@ object Main {
 
   def main(args: Array[String]): Unit = {
     val model = new Model
-    //val view = new AwesomeTextView
-    val view = new PanelView
+    val view = new TextView
+    //val view = new PanelView
     val controller = new Controller(view, model)
     view.init(controller)
-  
+
   }
 }
 //********
@@ -20,10 +20,10 @@ object Main {
 //********
 class Model {
   val playerOrder = new PlayerOrder
-  playerOrder.enqueue("AB")
-  playerOrder.enqueue("BC")
-  playerOrder.enqueue("CD")
-  playerOrder.enqueue("DE")
+  playerOrder.enqueue("A")
+  playerOrder.enqueue("B")
+  playerOrder.enqueue("C")
+  playerOrder.enqueue("D")
 
   def showPlayerOrder: String = { playerOrder.show }  
   def advancePlayerOrder: String = { playerOrder.advance }
